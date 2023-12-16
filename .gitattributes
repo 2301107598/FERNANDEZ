@@ -1,2 +1,0 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*BCS[[:space:]]Stick[[:space:]]Puppet[[:space:]]Show.mp4 filter=lfs diff=lfs merge=lfs -text
