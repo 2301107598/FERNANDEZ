@@ -35,25 +35,55 @@ video.center {
 .footer {icon decoration: none; text-align: center;}
 
 /* Create a Parallax Effect */
-.bgimg-1 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;}
 
-/* First image (FLEX PAGE) */
+/* First image (Flex Page) */
 .bgimg-1 {
   background-image: url("FlexHeader.jpg");
   min-height: 100%;}
 
+/* Second image (Past Projects) */
+.bgimg-2 {
+  background-image: url("FLEX PAGE/FlexPageHeader.png") style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LETTER <br>">;
+  min-height: 400px;}
+
+/* Third image (NSTPStopMotion) */
+.bgimg-3 {
+  background-image: url("FLEX PAGE/Screenshot (125).png");
+  min-height: 400px;}
+  
+/* Fourth image (BCS Stick Puppet Show) */
+.bgimg-4 {
+  background-image: url("FLEX PAGE/Screenshot (126).png");
+  min-height: 400px;}
+
+/* Fifth image (T248Vlog) */
+.bgimg-4 {
+  background-image: url("FLEX PAGE/Screenshot (127).png");
+  min-height: 400px;}
+
+/* Sixth image (CPRShortFilm) */
+.bgimg-4 {
+  background-image: url("FLEX PAGE/Screenshot (128).png");
+  min-height: 400px;}
+
+/* Seventh image (UTSPodcast) */
+.bgimg-4 {
+  background-image: url("FLEX PAGE/Screenshot (129).png");
+  min-height: 400px;}
+	
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1 {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7{
     background-attachment: scroll;
-    min-height: 400px;}
+    min-height: 400px;
 }
 
 a:link {
@@ -114,8 +144,15 @@ a:link {
 <div class="w3-content w3-padding-64">
 
 <!--Header-->
+<!-- Second Parallax Image with Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PAST PROJECTS</span>
+  </div>
+</div>
+	
 <div class="w3-display-container w-3-display-center w3-opacity-min">
-<img src="FLEX PAGE/FlexPageHeader.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="LETTER? <br>">
+<img src="FLEX PAGE/FlexPageHeader.png" 
 </div>
 <div class="w3-display-middle">
 <span class="w3-xxlarge w3-text-white w3-wide">PAST PROJECTS</span>
