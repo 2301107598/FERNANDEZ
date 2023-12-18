@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FaiDez Webpage - FLEX PAGE</title>
+<title>FaiDez Webpage - FLEX PAGE </title>
 <link rel="icon" type="image/x-icon" href="LETTER.png"/>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +12,17 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+image.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #000;}
 
@@ -21,39 +32,29 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
 
-footer {text-align: center;}
+.footer {icon decoration: none; text-align: center;}
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2 {
+.bgimg-1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;}
 
-/* First image (Flex Page) */
+/* First image (FLEX PAGE) */
 .bgimg-1 {
   background-image: url("FlexHeader.jpg");
   min-height: 100%;}
-
-/* Second image (Past Projects) */
-.bgimg-2 {
-  background-image: url("FlexPageHeader.png");
-  min-height: 400px;}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2 {
+  .bgimg-1 {
     background-attachment: scroll;
-    min-height: 400px;
-	font-size: auto;}
+    min-height: 400px;}
 }
-
-@font only screen and (max-device-width: 1600px) {
-	.w3-wide {letter-spacing: 6px;}
-	}
 
 a:link {
   text-decoration: none;
@@ -87,10 +88,10 @@ a:link {
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="Navbar">
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="https://2301107598.github.io/FERNANDEZ/" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="https://2301107598.github.io/FERNANDEZ/EMC%20JOURNEY/index.html" class="w3-bar-item w3-button" style="width:25% !important">EMC JOURNEY</a>
+    <a href="https://2301107598.github.io/FERNANDEZ/EMC%20JOURNEY/index.html" class="w3-bar-item w3-button" class="w3-bar-item w3-button" style="width:25% !important">EMC JOURNEY</a>
     <a href="#home" class="w3-bar-item w3-button" style="width:25% !important">FLEX PAGE</a>
     <a href="https://2301107598.github.io/FERNANDEZ/#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
@@ -100,19 +101,17 @@ a:link {
 <div class="w3-padding-large" id="main">
 
 <!-- First Parallax Image with Text -->
-<div>
-<div class="bgimg-1 w3-display-container" id = "home">
+<div class="bgimg-1 w3-display-container w3-opacity-min" id = "home">
   <div class="w3-display-middle">
     <span class="w3-xxxlarge w3-text-white w3-wide">FLEX PAGE</span>
   </div>
-</div>
 </div>
 	
 <br></br>
 
 <!-- Portfolio Section -->
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64">
+<div class="w3-content w3-padding-64">
 
 <!-- First Parallax Video with Text -->
 <div class="w3-display-container w-3-display-center w3-opacity-min">
@@ -125,117 +124,67 @@ a:link {
 	  </div>
 	</div>
 
-<!-- Flex Page -->
-	<div class="w3-row w3-grayscale-min">
-    <div class="w3-one w3-center">
-	
-	<div class="w3-content w3-container w3-padding-64">
+<div class="w3-content w3-padding-64"> </div>
 
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 	<h3 class="w3-center">STOP MOTION - NATIONAL SERVICE TRAINING PROGRAM</h3>
-	<p class="w3-center">Very proud of this! I made this with the use of the toys my younger brother had. I sewd the costumes of the legos too. I also felt appreciated when my sisters thought it was cute.</p>
-
-	<img src="Screenshot (125).png" style="width:100%" onclick="onClick(this)" alt="I tried but I still don't know how to put Large Files in Github. Please click the link to be directed to the video">
+	<p class="w3-center">Very proud of this! I made this with the use of the toys my younger brother had. I sewd the costumes of the legos too. I also felt appreciated when my sisters thought it was cute.</p><br>
+  
+    <image class = "center">
+	<img src="Screenshot (125).png" style="width:100%" type="image/png">
 	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1wGrD1xZXQ2rjsK1fzCCIwM6hwvgUKKfQ/view?usp=sharing" title="NSTP Stop Motion" target="_blank" class="w3-hover-opacity">NSTPStopMotion</a></div>
-	
-	<div class="w3-content w3-container w3-padding-64">
+	</image>
 	
 	<h3 class="w3-center">STICK PUPPET SHOW - BUKIDNON CULTURE STUDIES</h3>
-	<p class="w3-center">It is not exactly perfect but I am proud of this artwork. Its the first time I used Greeenscreen and it was fun drawing <br>those inconsistent-looking characters. The only sad part is the big watermark.</p></br>
-
-    <img src="Screenshot (126).png" style="width:100%" onclick="onClick(this)" alt="I tried but I still don't know how to put Large Files in Github. Please click the link to be directed to the video">
-	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/19GIsoS1rZXL7r9b2XNlNqhPZjrJAEOU-/view?usp=sharing" title="BCS Stick Puppet Show" target="_blank" class="w3-hover-opacity">BCSStickPuppetShow</a></div>
-      
-	<div class="w3-content w3-container w3-padding-64">
+	<p class="w3-center">It is not exactly perfect but I am proud of this artwork. Its the first time I used Greeenscreen and <br>it was fun drawing those inconsistent-looking characters. The only sad part is the big watermark.</p></br>
+  
+    <image class = "center">
+	<img src="Screenshot (126).png" style="width:100%" type="image/png">
+	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1wGrD1xZXQ2rjsK1fzCCIwM6hwvgUKKfQ/view?usp=sharing" title="NSTP Stop Motion" target="_blank" class="w3-hover-opacity">NSTPStopMotion</a></div>
+	</image>
 	
 	<h3 class="w3-center">VLOG - INTRODUCTION TO COMPUTING</h3>
-	<p class="w3-center">This is funny. It's the video we filmed for Intro to Computing to introduce the "Two types of Softwares". We made it vlog-themed.</p>
-	  
-	<img src="Screenshot (127).png" style="width:100%" onclick="onClick(this)" alt="I tried but I still don't know how to put Large Files in Github. Please click the link to be directed to the video">
-	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1EBFj88fnJsXUm0ih_gUXN7wZzkrIqjdG/view?usp=sharing" title="Introduction to Computing Vlog" target="_blank" class="w3-hover-opacity">T248VLOG</a></div>
-	
-	<div class="w3-content w3-container w3-padding-64">
+	<p class="w3-center">This is funny. It's the video we filmed for Intro to Computing to introduce the "Two types of Softwares". We made it vlog-themed.</p><br>
+  
+    <image class = "center">
+	<img src="Screenshot (127).png" style="width:100%" type="image/png">
+	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1wGrD1xZXQ2rjsK1fzCCIwM6hwvgUKKfQ/view?usp=sharing" title="NSTP Stop Motion" target="_blank" class="w3-hover-opacity">NSTPStopMotion</a></div>
+	</image>
 	
 	<h3 class="w3-center">SHORT FILM - NATIONAL SERVICE TRAINING PROGRAM</h3>
-	<p class="w3-center">When we were tasked to film a video for CPR, me and Danica made it look like a film to add a little spice into it.</p>
-
-	<img src="Screenshot (128).png" style="width:100%" onclick="onClick(this)" alt="I tried but I still don't know how to put Large Files in Github. Please click the link to be directed to the video">
-	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/18eV76wpgPZvFe6DHHgkaM7ilo79AR6D3/view?usp=sharing" title="CPR Short Film" target="_blank" class="w3-hover-opacity">CPRShortFilm</a></div>
-	
-	<div class="w3-content w3-container w3-padding-64">
+	<p class="w3-center">When we were tasked to film a video for CPR, me and Danica made it look like a film to add a little spice into it.</p><br>
+  
+    <image class = "center">
+	<img src="Screenshot (128).png" style="width:100%" type="image/png">
+	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1wGrD1xZXQ2rjsK1fzCCIwM6hwvgUKKfQ/view?usp=sharing" title="NSTP Stop Motion" target="_blank" class="w3-hover-opacity">NSTPStopMotion</a></div>
+	</image>
 	
 	<h3 class="w3-center">PODCAST - UNDERSTANDING THE SELF</h3>
-	<p class="w3-center">This is a podcast about Philosophers who talks about their theories on the "Self". We acted as the philosophers ourselves!</p> 
-    <img src="Screenshot (129).png" style="width:100%" onclick="onClick(this)" alt="I tried but I still don't know how to put Large Files in Github. Please click the link to be directed to the video">
-    <div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1OCrk_idHOGXSEtWYWGd-PTxVWnTYNjYj/view?usp=sharing" title="UTSPodcast" target="_blank" class="w3-hover-opacity">UTSPodcast</a></div>
-   
-   </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-  <!-- End Portfolio Section -->
-  </div>
+	<p class="w3-center">This is a podcast about Philosophers who talks about their theories on the "Self". We acted as the philosophers ourselves!</p><br>
   
+    <image class = "center">
+	<img src="Screenshot (129).png" style="width:100%" type="image/png">
+	<div class="w3-black w3-center w3-padding-24"> Video Link: <a href="https://drive.google.com/file/d/1wGrD1xZXQ2rjsK1fzCCIwM6hwvgUKKfQ/view?usp=sharing" title="NSTP Stop Motion" target="_blank" class="w3-hover-opacity">NSTPStopMotion</a></div>
+	</image>
+	
     <!-- Footer -->
-  <footer class="w3-content w3-text-grey w3-xlarge">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
-	<a href = "https://www.facebook.com/faye.fernandez.12" class="fa fa-facebook-official w3-hover-opacity !important"></a>
+    <a href = "https://www.facebook.com/faye.fernandez.12" class="fa fa-facebook-official w3-hover-opacity !important"></a>
     <a href = "https://www.youtube.com/channel/UC6gDHtAI_IEZCUnS5jCD56w" class="fa fa-youtube-square w3-hover-opacity !important"></a>
     <a href = "https://www.pinterest.ph/ffaye98/" class="fa fa-pinterest-p w3-hover-opacity !important"></a>
     <a href = "https://twitter.com/Fai_Dez" class="fa fa-twitter w3-hover-opacity !important"></a>
     <p class="w3-medium">ALL RIGHTS RESERVED FOR FAIDEZ </p>
-	<div class="w3-content w3-container w3-padding-64"></div>
-    	</div>
+	</div>
 	</div>
   <!-- End footer -->
   </footer>
 
-  </div>
 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+</div>
+</div>
 
 <!-- END PAGE CONTENT -->
 
